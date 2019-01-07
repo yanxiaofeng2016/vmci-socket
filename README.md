@@ -13,23 +13,15 @@ client cid:port command
 PC#./client 100000:123456 "ls -l"
 
 -rw-r--r--. 1 root root 2236 Jan  4 17:19 client.c
-
 -rw-r--r--. 1 root root  590 Jan  4 17:24 GNUmakefile
-
 -rw-r--r--. 1 root root  379 Jan  4 17:31 README.md
-
 -rw-r--r--. 1 root root 5424 Jan  4 17:19 socket.c
-
 -rw-r--r--. 1 root root  249 Jan  7 11:21 sock-portable.h
-
 -rw-r--r--. 1 root root  310 Jan  7 11:21 sock-posix.c
-
 -rw-r--r--. 1 root root  520 Jan  4 17:20 sock-windows.c
-
 -rwxr-xr-x. 1 root root  317 Jan  4 17:23 vmci-cflags
 
 usage for windows system running in virtual machine
-
 client cid:port command
 
 PC#./client 100000:123456 "ipconfig"
