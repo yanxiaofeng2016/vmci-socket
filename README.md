@@ -9,7 +9,7 @@ First, you need to run the binary program "socket" (window for socket.exe) on th
 usage for linux system running in virtual machine
 client cid:port command
 
-[pc]#./client 100000:123456 "ls -l"
+PC#./client 100000:123456 "ls -l"
 -rw-r--r--. 1 root root 2236 Jan  4 17:19 client.c
 -rw-r--r--. 1 root root  590 Jan  4 17:24 GNUmakefile
 -rw-r--r--. 1 root root  379 Jan  4 17:31 README.md
@@ -22,7 +22,7 @@ client cid:port command
 usage for windows system running in virtual machine
 client cid:port command
 
-[pc]#./client 100000:123456 "ipconfig"
+PC#./client 100000:123456 "ipconfig"
 Windows IP Configuration
 Ethernet adapter Ethernet0:
 
@@ -32,11 +32,10 @@ Ethernet adapter Ethernet0:
    
 # How to build:
 for linux:
-[pc]#make
+PC#make
 
 for window:
-[pc]#make WINDOWS=1
+PC#make WINDOWS=1
 
 so, the binary "client" is usually for linux because esxi system is derived from Linux.
 and the binary "socket" or "socket.exe" need to be compiled for two parts. one is for linux ,the other is for windows system.
-
