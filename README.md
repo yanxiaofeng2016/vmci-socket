@@ -6,7 +6,7 @@ This program is able to input the commands supported by the client operating sys
 
 First, you need to run the binary program "socket" (window for socket.exe) on the client's operating system. and then run the next command on esxi(host) side.
 
-# usage for linux system running in virtual machine
+usage for linux system running in virtual machine
 client cid:port command
 
 [pc]#./client 100000:123456 "ls -l"
@@ -19,7 +19,7 @@ client cid:port command
 -rw-r--r--. 1 root root  520 Jan  4 17:20 sock-windows.c
 -rwxr-xr-x. 1 root root  317 Jan  4 17:23 vmci-cflags
 
-# usage for windows system running in virtual machine
+usage for windows system running in virtual machine
 client cid:port command
 
 [pc]#./client 100000:123456 "ipconfig"
@@ -30,12 +30,12 @@ Ethernet adapter Ethernet0:
    Connection-specific DNS Suffix  . : 
    
    
-How to build:
+# How to build:
 for linux:
-#make
+[pc]#make
 
 for window:
-#make WINDOWS=1
+[pc]#make WINDOWS=1
 
 so, the binary "client" is usually for linux because esxi system is derived from Linux.
 and the binary "socket" or "socket.exe" need to be compiled for two parts. one is for linux ,the other is for windows system.
